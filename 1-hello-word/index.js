@@ -7,7 +7,9 @@ app.set('view engine', 'pug');
 app.set('views', './views')
 
 app.get('/', function (request,response) {
-	response.render('index');
+	response.render('index', {
+		name: "Đức"
+	});
 })
 
 app.get('/users', function (request,response) {
