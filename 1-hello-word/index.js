@@ -7,7 +7,7 @@ app.set('view engine', 'pug');
 app.set('views', './views')
 
 app.get('/', function (request,response) {
-	response.send('<h1>Hello word</h1><a href="/users">User list</a>');
+	response.render('index');
 })
 
 app.get('/users', function (request,response) {
