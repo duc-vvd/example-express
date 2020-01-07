@@ -13,7 +13,12 @@ app.get('/', function (request,response) {
 })
 
 app.get('/users', function (request,response) {
-	response.send('User list');
+	response.render('users/index', {
+		users: [
+		{id: 1, name: 'Đức'},
+		{id: 2, name: 'Thúy'}
+		]
+	});
 })
 
 app.listen(port, function () {
