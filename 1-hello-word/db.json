@@ -1,84 +1,16 @@
 {
   "users": [
     {
-      "name": "Đức",
-      "id": "laE_TJyV"
-    },
-    {
-      "name": "Thúy",
-      "id": "KyyXlF5L"
-    },
-    {
-      "name": "Quyết",
-      "id": "JnUKGj-1"
-    },
-    {
-      "name": "Thiện",
-      "id": "Ziz27oyg"
-    },
-    {
-      "name": "Tuấn Anh",
-      "id": "muD7_aII"
-    },
-    {
       "name": "Việt Đức",
-      "phone": "0123123",
-      "id": "1j-FHEJy"
+      "phone": "0941613520",
+      "id": "nrwQwQOY",
+      "email": "vuvietduc9x@gmail.com",
+      "password": "123456"
     },
     {
-      "name": "",
-      "phone": "",
-      "id": "56RNNW3P"
-    },
-    {
-      "name": "<script type=\"text/javascript\">alert('hihi')</script>",
-      "phone": "",
-      "id": "kZTFDPzI"
-    },
-    {
-      "name": "",
-      "phone": "",
-      "id": "snrz8kmH"
-    },
-    {
-      "name": "",
-      "phone": "",
-      "id": "0gGJuH0a"
-    },
-    {
-      "name": "đức",
-      "phone": "hihi",
-      "id": "lo837m64"
-    },
-    {
-      "name": "44",
-      "phone": "444",
-      "id": "kj25dHuI"
-    },
-    {
-      "name": "đức",
-      "phone": "123",
-      "id": "lulFa-rk"
-    },
-    {
-      "name": "hihi",
-      "phone": "hii",
-      "id": "at2g1W9v"
-    },
-    {
-      "name": "hihi",
-      "phone": "haa",
-      "id": "iqlANvlV"
-    },
-    {
-      "name": "hihi",
-      "phone": "88",
-      "id": "YrfgOSUE"
-    },
-    {
-      "name": "đức",
-      "phone": "88",
-      "id": "hbS2gJkw"
+      "name": "Phương Thúy",
+      "phone": "0345259096",
+      "id": "7o23ZC7C"
     }
   ]
 }
