@@ -1,0 +1,49 @@
+extends ../layouts/common
+
+block content
+
+	h1.mb-5 Products
+	h1= pages
+	
+	.container
+		.row
+			each product in products
+				div.col-md-3.mb-4
+					.card
+						img.card-img-top(src=product.image, alt='#')
+						.card-body
+							h5.card-title= product.name
+							p.card-text= product.description
+							a.btn.btn-primary(href='#') Add to cart
+
+	.container
+		.row.d-flex.justify-content-center
+			nav(aria-label='Page navigation example')
+				ul.pagination
+
+					if page > 1
+						li.page-item
+							a.page-link(href='/products?page=' + (page - 1), aria-label='Previous', aria-disabled="true")
+								span(aria-hidden='true') &laquo;
+								span.sr-only Previous
+
+					- var n = 1
+					while n <= pages
+						li.page-item
+							a.page-link(href='/products?page=' + n)= n
+						- n++;
+
+					if page < 13
+						li.page-item
+							a.page-link(href='/products?page=' + (page + 1), aria-label='Next')
+								span(aria-hidden='true') &raquo;
+								span.sr-only Next
+	- var n = 0;
+	ul
+		while n < 4
+			li= n
+				ul
+					li 1
+					li 2
+			- n++;
+			
