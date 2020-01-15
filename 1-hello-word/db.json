@@ -758,5 +758,37 @@
       "email": "fthain2r@hostgator.com",
       "description": "at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat eros viverra eget congue eget"
     }
+  ],
+  "sessions": [
+    {
+      "id": "oz-OP62W",
+      "cart": {
+        "db57304f-ab8e-4b7e-ae96-c8d87261d93e": 1,
+        "a555ebeb-a433-4c24-acce-351dca795b85": 1
+      }
+    },
+    {
+      "id": "enonKGMK",
+      "cart": {
+        "a555ebeb-a433-4c24-acce-351dca795b85": 1
+      }
+    },
+    {
+      "id": "EcZfOt-w"
+    },
+    {
+      "id": "VQRkNY-u",
+      "cart": {
+        "db57304f-ab8e-4b7e-ae96-c8d87261d93e": 3,
+        "a0d7558a-cf4b-446e-8576-469c2bcd6e8e": 1,
+        "53a975fb-6f7d-4cb8-a7fb-beaad991209a": 3,
+        "a555ebeb-a433-4c24-acce-351dca795b85": 1,
+        "b22a9e11-c71a-4f7d-99e1-5da4938901ba": 1,
+        "9c0c60a9-eab0-41c6-8eaa-62487a19b567": 1,
+        "8b80ae03-6bca-42ef-9f8a-716661097cd9": 1,
+        "b941c4c0-c0f7-4cac-a1e2-c010d4d964dd": 1,
+        "0cfc6b89-9c58-4d9b-842c-9bca24fb9f5c": 1
+      }
+    }
   ]
 }
