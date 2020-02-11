@@ -790,5 +790,31 @@
         "0cfc6b89-9c58-4d9b-842c-9bca24fb9f5c": 1
       }
     }
+  ],
+  "transfer": [
+    {
+      "id": "W1XgF1-k",
+      "amount": 500000,
+      "accountId": "123123",
+      "userId": "nrwQwQOY"
+    },
+    {
+      "id": "W8lWOtJ7",
+      "amount": 10000000,
+      "accountId": "hacker123",
+      "userId": "nrwQwQOY"
+    },
+    {
+      "id": "ch3wZk02",
+      "amount": 10000000,
+      "accountId": "hacker123",
+      "userId": "nrwQwQOY"
+    },
+    {
+      "id": "_bctdwTW",
+      "amount": 500000,
+      "accountId": "x123abc",
+      "userId": "nrwQwQOY"
+    }
   ]
 }
