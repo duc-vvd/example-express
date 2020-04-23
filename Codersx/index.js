@@ -4,12 +4,20 @@ var fs = require('fs');
 
 var port = 3000;
 
-app.get('/', function (request, response) {
-	response.send('<h1>Hello CodersX!</h1><a href="/users">User List</a>')
+app.set('view engine', 'pug');
+app.set('views', './views');
+
+app.get('/', function (req, res) {
+	res.render('index', {name : 'Đức'});
 });
 
 app.get('/users', function (req, res) {
-	res.send('User list');
+	res.render('users/index', {
+		users: [
+			{id: 1, name: 'Đức'},
+			{id: 2, name: 'Thúy'}
+		]
+	});
 })
 
 app.listen(port, function () {
