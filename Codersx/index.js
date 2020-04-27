@@ -3,6 +3,9 @@ var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 
 var userRoute = require('./routes/user.route');
+var authRoute = require('./routes/auth.route');
+
+var authMiddleware = require('./middlewares/auth.middleware');
 
 var app = express();
 
@@ -17,7 +20,8 @@ app.use(cookieParser());
 
 app.use(express.static('public'));
 
-app.use('/users', userRoute);
+app.use('/users', authMiddleware.requireAuth, userRoute);
+app.use('/auth', authRoute);
 
 app.get('/', function (req, res) {
 	console.log(req.cookies);
