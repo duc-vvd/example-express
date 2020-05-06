@@ -1,0 +1,53 @@
+extends ../layouts/common
+
+block content
+
+	h1 Products
+
+	.container
+		.row
+			each product in products
+				.col-md-12.col-lg-3.col.mb-4
+					.card
+						img.card-img-top(src=product.image, alt='...')
+						.card-body
+							h5.card-title= product.name
+							p.card-text= product.description
+							a.btn.btn-primary(href='#') Go somewhere
+	.container
+		.d-flex.justify-content-center
+			nav(aria-label='Page navigation example')
+				ul.pagination
+					
+					- var n = 2
+					if page - n <= 1
+						- for (var x = 1; x <= page +n; x++ )	
+							li.page-item(class= page==x?"active":"")
+								a.page-link(href='/products?p=' + x)= x
+						li.page-item.disabled
+							a.page-link(href='#', tabindex='-1', aria-disabled='true') ..
+
+					else if (page + n) >= pageMax
+						li.page-item
+						a.page-link(href='/products?p=' + (page - 1), aria-label='Previous')
+							span(aria-hidden='true') «
+						li.page-item.disabled
+							a.page-link(href='#', tabindex='-1', aria-disabled='true') ...
+						- for (var x = page - n; x <= pageMax; x++ )	
+							li.page-item(class= page==x?"active":"")
+								a.page-link(href='/products?p=' + x)= x
+					else 
+						li.page-item
+						a.page-link(href='/products?p=' + (page - 1), aria-label='Previous')
+							span(aria-hidden='true') «
+						li.page-item.disabled
+							a.page-link(href='#', tabindex='-1', aria-disabled='true') ...
+						- for (var x = page - n; x <= page +n; x++ )	
+							li.page-item(class= page==x?"active":"")
+								a.page-link(href='/products?p=' + x)= x	
+						li.page-item.disabled
+							a.page-link(href='#', tabindex='-1', aria-disabled='true') ...	
+						li.page-item
+							a.page-link(href='/products?p=' + (page + 1), aria-label='Next')
+								span(aria-hidden='true') »
+

@@ -1,0 +1,19 @@
+extends ../layouts/common
+
+block content
+
+	h1 Update user #{id}
+
+	if errors
+		each error in errors
+			.alert.alert-danger
+				span= error
+	form(action="/users/update", method="POST")
+		.form-group
+			label Name
+			input(type="hidden", name="id", value=id)
+			input.form-control(type="text", name="name", value=value?value.name:'')
+		.form-group
+			label Phone
+			input.form-control(type="text", name="phone", value=value?value.phone:'')
+		button.btn.btn-primary Create
